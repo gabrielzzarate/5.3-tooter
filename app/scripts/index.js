@@ -10,4 +10,11 @@ $(function(){
   });
 
   Post.fetch();
+
+
+///stuff i've added
+  $(document).on('create: post', function(event, data){
+    view.showPosts(data);
+
+  });
 });

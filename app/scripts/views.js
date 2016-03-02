@@ -11,3 +11,14 @@ PostView.prototype.showPosts = function(posts){
 };
 
 window.PostView = PostView;
+
+
+//stuff i've added
+function CreatePost(){
+  $('.posts').append('<li class="new post">');
+}
+
+
+CreatePost.prototype.showPost = function(posts){
+
+});
