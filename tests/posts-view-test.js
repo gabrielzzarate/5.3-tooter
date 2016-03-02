@@ -1,4 +1,5 @@
 var expect = chai.expect;
+var $ = jQuery;
 
 describe("PostView", function(){
   var view, posts;

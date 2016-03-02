@@ -1,11 +1,11 @@
 var expect = chai.expect;
 
-require('./index');
+require('index');
 
 describe("Post", function(){
   describe("fetch", function(){
     it("should return a promise", function(){
-      var promise = Post.fech();
+      var promise = Post.fetch();
       expect(promise).to.respondTo('then');
     });
 
@@ -29,6 +29,6 @@ describe("Post", function(){
 
       Post.fetch();
     });
-    
+
   });
 });
