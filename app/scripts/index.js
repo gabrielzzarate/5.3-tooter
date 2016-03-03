@@ -13,11 +13,19 @@ $(function(){
 
 
 ///stuff i've added
-  $(document).on('create: post', function(event, data){
-    view.showPosts(data);
 
-  });
+function SubmitButtonHandler(){
+  $('#submit-button').on('click', function(event, data){
+    $(document).trigger('create:post', {title: "new post", body: 'new body'});
+    return data;
 });
+
+}
+  //$(document).on('create: post', function(event, data){
+  //  view.showPosts(data);
+
+});
+
 
 function hello(){
   return 'hello world';

@@ -1,3 +1,5 @@
+var sample = require('sample');
+
 var expect = chai.expect;
 var $ = require('jquery');
 

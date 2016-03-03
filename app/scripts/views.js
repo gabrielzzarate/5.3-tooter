@@ -10,7 +10,7 @@ PostView.prototype.showPosts = function(posts){
   });
 };
 
-window.PostView = PostView;
+global.PostView = PostView;
 
 
 //stuff i've added
@@ -19,6 +19,4 @@ function CreatePost(){
 }
 
 
-CreatePost.prototype.showPost = function(posts){
-
-});
+CreatePost.prototype.showPost = function(posts){};
